@@ -1,0 +1,14 @@
+{
+    "name": "flownative/workspacemodulespeedup",
+    "type": "typo3-flow-package",
+    "description": "Preliminary solution for speeding up the workspace module performance .",
+    "license": "MIT",
+    "require": {
+        "typo3/neos": "2.3.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Flownative\\WorkspaceModuleSpeedUp\\": "Classes"
+        }
+    }
+}
