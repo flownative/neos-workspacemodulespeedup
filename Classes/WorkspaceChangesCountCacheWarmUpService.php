@@ -11,12 +11,12 @@ namespace Flownative\WorkspaceModuleSpeedUp;
  * source code.
  */
 
-use TYPO3\Flow\Annotations as Flow;
-use TYPO3\Flow\Cache\Frontend\VariableFrontend;
-use TYPO3\Flow\Log\SystemLoggerInterface;
-use TYPO3\Neos\Controller\Module\Management\WorkspacesController;
-use TYPO3\TYPO3CR\Domain\Model\Workspace;
-use TYPO3\TYPO3CR\Domain\Repository\WorkspaceRepository;
+use Neos\Flow\Annotations as Flow;
+use Neos\Cache\Frontend\VariableFrontend;
+use Neos\Flow\Log\SystemLoggerInterface;
+use Neos\Neos\Controller\Module\Management\WorkspacesController;
+use Neos\ContentRepository\Domain\Model\Workspace;
+use Neos\ContentRepository\Domain\Repository\WorkspaceRepository;
 
 /**
  * @Flow\Scope("singleton")

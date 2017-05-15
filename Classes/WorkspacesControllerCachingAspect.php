@@ -11,13 +11,13 @@ namespace Flownative\WorkspaceModuleSpeedUp;
  * source code.
  */
 
-use TYPO3\Flow\Annotations as Flow;
-use TYPO3\Flow\Aop\JoinPointInterface;
-use TYPO3\Flow\Cache\Frontend\VariableFrontend;
+use Neos\Flow\Annotations as Flow;
+use Neos\Flow\Aop\JoinPointInterface;
+use Neos\Cache\Frontend\VariableFrontend;
 
 /**
  * @Flow\Aspect
- * @Flow\Introduce("class(TYPO3\Neos\Controller\Module\Management\WorkspacesController)", traitName="Flownative\WorkspaceModuleSpeedUp\WarmUpChangesCountTrait")
+ * @Flow\Introduce("class(Neos\Neos\Controller\Module\Management\WorkspacesController)", traitName="Flownative\WorkspaceModuleSpeedUp\WarmUpChangesCountTrait")
  * @Flow\Scope("singleton")
  */
 class WorkspacesControllerCachingAspect
@@ -29,7 +29,7 @@ class WorkspacesControllerCachingAspect
 
     /**
      * @param JoinPointInterface $joinPoint
-     * @Flow\Around("method(TYPO3\Neos\Controller\Module\Management\WorkspacesController->computeChangesCount(.*))")
+     * @Flow\Around("method(Neos\Neos\Controller\Module\Management\WorkspacesController->computeChangesCount(.*))")
      * @return array
      */
     public function computeChangesCountCacheAdvice(JoinPointInterface $joinPoint)

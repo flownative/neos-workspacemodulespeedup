@@ -11,10 +11,10 @@ namespace Flownative\WorkspaceModuleSpeedUp;
  * source code.
  */
 
-use TYPO3\Flow\Command\CacheCommandController;
-use TYPO3\Flow\Core\Bootstrap;
-use TYPO3\Flow\Package\Package as BasePackage;
-use TYPO3\TYPO3CR\Domain\Service\PublishingService;
+use Neos\Flow\Command\CacheCommandController;
+use Neos\Flow\Core\Bootstrap;
+use Neos\Flow\Package\Package as BasePackage;
+use Neos\ContentRepository\Domain\Service\PublishingService;
 
 /**
  * Package

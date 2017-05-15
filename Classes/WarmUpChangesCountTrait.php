@@ -11,7 +11,7 @@ namespace Flownative\WorkspaceModuleSpeedUp;
  * source code.
  */
 
-use TYPO3\TYPO3CR\Domain\Model\Workspace;
+use Neos\ContentRepository\Domain\Model\Workspace;
 
 /**
  * WarmUpChangesCountTrait
