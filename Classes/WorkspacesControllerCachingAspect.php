@@ -35,7 +35,7 @@ class WorkspacesControllerCachingAspect
     public function computeChangesCountCacheAdvice(JoinPointInterface $joinPoint)
     {
         $selectedWorkspace = $joinPoint->getMethodArgument('selectedWorkspace');
-        $changesCount = $this->contentChangesCache->get($selectedWorkspace->getName());
+        $changesCount = $this->contentChangesCache->get($selectedWorkspace->getName() . '-count');
         if ($changesCount === false) {
             $changesCount = $joinPoint->getAdviceChain()->proceed($joinPoint);
             $this->contentChangesCache->set($selectedWorkspace->getName() . '-count', $changesCount);
