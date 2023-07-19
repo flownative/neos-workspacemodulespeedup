@@ -4,7 +4,7 @@
     "license": "MIT",
     "description": "Preliminary solution for speeding up the workspace module performance .",
     "require": {
-        "neos/neos": "~3.0"
+        "neos/neos": "^7.3"
     },
     "autoload": {
         "psr-4": {
